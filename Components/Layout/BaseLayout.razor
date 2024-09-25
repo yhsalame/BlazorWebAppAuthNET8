@@ -1,0 +1,9 @@
+﻿@inherits LayoutComponentBase
+<AuthorizeView>
+    <Authorized>
+        <MainLayout BodyContent="@Body" />
+    </Authorized>
+    <NotAuthorized>
+        <LoginLayout BodyContent="@Body" />
+    </NotAuthorized>
+</AuthorizeView>
